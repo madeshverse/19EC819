@@ -1,0 +1,38 @@
+AIM:
+    To design a micromixer and analyze mixing efficiency of two fluids.
+SOFTWARE REQUIRED:
+    COMSOL Multiphysics
+PROCEDURE:
+Model Wizard:
+    Select 3D
+    Select Physics →
+    Fluid Flow → Laminar Flow
+    Transport of Diluted Species
+    Click Add
+    Select Study → Stationary
+    Click Done
+GEOMETRY 1
+    Set Length unit = µm
+CHANNEL DESIGN
+    Create two inlet channels (Width = 50 µm, Height = 20 µm)
+    Merge into a mixing channel (Length = 1000 µm)
+    Click Build All
+MATERIALS
+    Add Material → Water (liquid)
+LAMINAR FLOW
+  INLET 1
+        Velocity = 0.01 m/s
+   INLET 2
+       Velocity = 0.01 m/s
+   OUTLET
+Pressure = 0 Pa
+TRANSPORT OF SPECIES
+  Define concentration:
+    Inlet 1 → Concentration = 1 mol/m³
+    Inlet 2 → Concentration = 0 mol/m³
+MESH
+  Free Tetrahedral → Build Mesh
+STUDY -Compute
+  
+RESULT:
+    The mixing behavior and concentration distribution inside the micromixer are successfully analyzed.
