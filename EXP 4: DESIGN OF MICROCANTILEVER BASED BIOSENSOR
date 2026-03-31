@@ -1,0 +1,31 @@
+AIM:
+    To design a microcantilever biosensor and analyze its deflection due to applied surface stress.
+SOFTWARE REQUIRED:
+    COMSOL Multiphysics
+PROCEDURE:
+  Model Wizard:
+    Select 3D
+    Physics → Solid Mechanics
+    Study → Stationary
+    Click Done
+GEOMETRY 1
+  Set unit = µm
+BLOCK (CANTILEVER)
+    Length = 200 µm
+    Width = 50 µm
+    Thickness = 5 µm
+    Build All
+MATERIALS
+    Add → Silicon
+SOLID MECHANICS
+  FIXED CONSTRAINT
+    Select one end of cantilever → Fixed
+  BOUNDARY LOAD / SURFACE STRESS
+    Apply load on top surface
+    Example: 0.1 N/m (surface stress)
+MESH
+    Free Tetrahedral → Build Mesh
+STUDY
+    Compute
+RESULT:
+    The deflection of the microcantilever due to applied surface stress is successfully obtained.
