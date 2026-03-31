@@ -1,0 +1,28 @@
+AIM:
+    To study the fabrication of microchannels using PDMS (Polydimethylsiloxane).
+
+APPARATUS REQUIRED:
+    PDMS (Base and Curing Agent)
+    Silicon mold
+    Petri dish
+    Oven
+    Vacuum desiccator
+    Glass substrate
+PROCEDURE:
+  1.Mold Preparation
+    Fabricate a mold using photolithography (master mold).
+  2.PDMS Preparation
+    Mix PDMS base and curing agent in ratio 10:1.
+    Stir thoroughly.
+  3.Degassing
+    Place mixture in vacuum desiccator to remove air bubbles.
+  4.Pouring
+    Pour PDMS mixture onto mold.
+  5.Curing
+    Place in oven at 60–80°C for 1–2 hours.
+  6.Peeling
+    Remove cured PDMS carefully from mold.
+  7.Bonding
+    Bond PDMS to glass substrate (using plasma treatment if available).
+RESULT:
+    The microchannel is successfully fabricated using PDMS and is ready for microfluidic applications.
