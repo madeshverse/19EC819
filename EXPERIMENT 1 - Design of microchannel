@@ -1,0 +1,40 @@
+EXP 1: DESIGN OF MICROCHANNEL
+AIM:
+To model a microchannel using COMSOL and analyze the fluid flow characteristics such as velocity and pressure distribution.
+
+SOFTWARE REQUIRED:
+1.COMSOL Multiphysics
+
+PROCEDURE:
+1.Model Wizard: Select 3D
+2. Select Physics →  Fluid Flow → Single-Phase Flow → Laminar Flow
+3. Click Add
+4. Select Study → Stationary 
+5. Click Done
+
+GEOMETRY 1
+ Set Length unit = µm
+1. BLOCK (MICROCHANNEL) Right-click Geometry → Block
+ Width = 50 µm
+ Depth = 500 µm
+ Height = 20 µm
+Click Build All
+Click Zoom Extents
+2. MATERIALS
+ Add Material → Built-in → Water (liquid)
+ Apply to geometry
+3. LAMINAR FLOW (SPF)
+ INLET Right-click Laminar Flow → Inlet
+ Select one face of the channel
+ Set velocity = 0.01 m/s
+OUTLET Right-click Laminar Flow → Outlet
+ Select opposite face
+ Set pressure = 0 Pa
+WALL CONDITION Remaining surfaces → No-slip condition (default)
+4. MESH
+ Right-click Mesh → Free Tetrahedral
+ Click Build Mesh
+5. STUDY ->Click Compute
+
+RESULT:
+The velocity and pressure distribution inside the microchannel are successfully obtained.
