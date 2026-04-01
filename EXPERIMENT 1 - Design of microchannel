@@ -37,5 +37,4 @@ WALL CONDITION Remaining surfaces → No-slip condition (default)
 5. STUDY ->Click Compute
 
 RESULT:
-blob:https://web.whatsapp.com/c0102b3e-4d8c-4f11-baa0-92c7abc71e4c
 The velocity and pressure distribution inside the microchannel are successfully obtained.
